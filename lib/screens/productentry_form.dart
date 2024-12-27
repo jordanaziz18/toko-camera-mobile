@@ -51,8 +51,8 @@ class _ProductEntryFormPageState extends State<ProductEntryFormPage> {
                     if (value == null || value.isEmpty) {
                       return "Product name cannot be empty!";
                     }
-                    if (value.length > 100) {
-                      return "Product name cannot be longer than 100 characters!";
+                    if (value.length > 150) {
+                      return "Product name cannot be longer than 150 characters!";
                     }
                     return null;
                   },

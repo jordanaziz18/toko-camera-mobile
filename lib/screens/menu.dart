@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:toko_camera_mobile/widgets/product_card.dart';
 import 'package:toko_camera_mobile/widgets/left_drawer.dart';
+import 'package:toko_camera_mobile/widgets/product_card.dart';
 
 class MyHomePage extends StatelessWidget {
   final String npm = '2306173555'; // NPM
   final String name = 'Muhammad Jordan Ar-Razi Aziz'; // Name
   final String className = 'KKI'; // Class
-  final List<ItemHomePage> items = [
-    ItemHomePage("View Product", Icons.mood, Colors.blue.shade600),
-    ItemHomePage("Add Product", Icons.add, Colors.indigo),
-    ItemHomePage("Logout", Icons.logout, Colors.redAccent.shade700),
+  final List<ItemHomepage> items = [
+    ItemHomepage("View Product", Icons.mood, Colors.blue.shade600),
+    ItemHomepage("Add Product", Icons.add, Colors.indigo),
+    ItemHomepage("Logout", Icons.logout, Colors.redAccent.shade700),
   ];
   MyHomePage({super.key});
 
@@ -66,7 +66,7 @@ class MyHomePage extends StatelessWidget {
                     mainAxisSpacing: 10,
                     crossAxisCount: 3,
                     shrinkWrap: true,
-                    children: items.map((ItemHomePage item) {
+                    children: items.map((ItemHomepage item) {
                       return ItemCard(item);
                     }).toList(),
                   ),
